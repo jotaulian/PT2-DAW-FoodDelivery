@@ -18,6 +18,9 @@ body {
   overflow-x: hidden;
   background-color: #202020;
 }
+a {
+  text-decoration: none;
+}
 /* Botónes */
 
 /* ===== BACKGROUNDS ===== */
@@ -54,12 +57,20 @@ body {
 }
 .subtitle {
   font-family: "Grand Hotel", cursive;
-  font-size: 56px;
+  font-size: 45px;
   color: white;
   line-height: 1;
   text-align: center;
 }
 .sub-heading {
+  background: linear-gradient(to right, #fc2547 50%, #ff5a00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+#sub-heading {
   background: linear-gradient(to right, #fc2547 50%, #ff5a00 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -81,6 +92,13 @@ body {
   margin-bottom: 5px;
   font-weight: 300;
   font-size: 1rem;
+}
+.texto-grande {
+  color: #ffffff;
+  opacity: 0.8;
+  margin-bottom: 5px;
+  font-weight: 300;
+  font-size: 1.4rem;
 }
 .testimonio {
   max-width: 645px;
@@ -227,7 +245,7 @@ header {
 
 /* ===== SEGUNDA FRANJA ===== */
 .espacio-busqueda {
-  padding-top: 20rem;
+  padding-top: 15rem;
 }
 .service-card i {
   background: linear-gradient(to right, #fc2547 50%, #ff5a00 100%);
@@ -248,7 +266,7 @@ header {
 .card {
   border: none;
   border-radius: 0px;
-  background-color: #0d0d0d;
+  background-color: #0a0a0a;
   color: white;
 }
 .estrellitas {
@@ -299,6 +317,14 @@ header {
 }
 .features-icons {
   font-size: 5rem;
+  margin-bottom: 2rem;
+}
+.features-icons-color {
+  background: linear-gradient(to right, #fc2547 50%, #ff5a00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s ease;
+  animation: bigsmall 0.4s linear 2s infinite alternate;
 }
 
 /* ===== FOOTER FRANJA ===== */
@@ -407,12 +433,15 @@ header {
     transform: translateY(-50%);
     z-index: 11;
   }
+  .padding-top-xs {
+    padding-top: 0px;
+  }
 }
 
 @media screen and (min-width: 992px) {
   .ajuste {
     max-width: 1100px;
-    padding-top: 7rem;
+    /* padding-top: 7rem; */
   }
   .plato {
     display: block;
@@ -423,5 +452,15 @@ header {
     top: 35%;
     transform: translateY(-50%);
     z-index: 11;
+  }
+}
+
+/* ==== Animaciones ==== */
+@keyframes bigsmall {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
   }
 }
