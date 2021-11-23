@@ -1,0 +1,302 @@
+/* ===== FUENTES ===== */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== GLOBAL STYLES ===== */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #2b2b2b;
+  font-weight: 400;
+  line-height: 25px;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #202020;
+}
+/* Botónes */
+
+/* ===== BACKGROUNDS ===== */
+.bg-dark {
+  background-color: #202020;
+}
+.bg-purple {
+  background-color: #350d82;
+}
+.bg-1 {
+  background-image: url(../img/bg-1.jpg);
+}
+.bg-2 {
+  background-image: url(../img/bg-2.jpg);
+}
+.padding-bottom {
+  padding-bottom: 120px;
+}
+.padding-top {
+  padding-top: 120px;
+}
+.margin-bottom {
+  margin-bottom: 260px;
+}
+.fondo-relativo {
+  position: relative;
+}
+
+/* ===== PRIMERA FRANJA ===== */
+/* NAVBAR */
+header {
+  height: 100vh;
+}
+.nav-link {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff !important;
+  font-size: 18px;
+}
+.nav-item {
+  padding-right: 1rem;
+}
+.little {
+  font-size: 0.75rem;
+  margin-left: 0.25rem;
+}
+
+/* BANNER */
+.banner {
+  margin-top: 10rem;
+}
+.banner p {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  opacity: 0.7;
+  line-height: 20px;
+  min-width: 313px;
+  max-width: 313px;
+  letter-spacing: 0;
+  display: block;
+  margin: 0 auto;
+}
+.banner .small-p {
+  font-size: 0.9rem;
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.title {
+  font-family: "Grand Hotel", cursive;
+  font-size: 48px;
+  color: white;
+}
+.subtitle {
+  font-family: "Grand Hotel", cursive;
+  font-size: 56px;
+  color: white;
+  line-height: 1;
+  text-align: center;
+}
+.busqueda {
+  /* max-width: 90%; */
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  margin-top: 5rem;
+  padding: 0.6rem;
+}
+.form-group {
+  /* position: relative; */
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid rgb(144, 144, 144);
+  margin-bottom: 2rem;
+}
+#location-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: rgb(133, 131, 131);
+}
+.icon {
+  position: absolute;
+  left: 2.5%;
+  top: 0%;
+  color: rgb(133, 131, 131);
+  font-size: 2rem;
+}
+.btn-propio {
+  display: block;
+  text-decoration: none;
+  background: linear-gradient(to right, #fc2547 0%, #ff5a00 100%);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.btn-propio:hover {
+  background: linear-gradient(to right, #ff5a00 0%, #fc2547 100%);
+  color: white;
+}
+#btn-more {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0.75rem 0;
+  margin-bottom: 3rem;
+}
+/* Absolute Elements */
+.slider-social {
+  position: absolute;
+  left: 4%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 11;
+  color: white;
+  /* margin-left: 15px; */
+}
+.slider-social a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 17px;
+}
+.hojas {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateY(-50%);
+  z-index: 11;
+}
+
+/* ===== SEGUNDA FRANJA ===== */
+.card {
+  border: none;
+  border-radius: 0px;
+  background-color: #0d0d0d;
+  color: white;
+}
+.estrellitas {
+  color: #ffc13c;
+  font-size: 0.8rem;
+}
+.card-text {
+  color: rgb(133, 131, 131);
+}
+
+/* ===== TERCERA FRANJA ===== */
+.franja3 {
+  padding: 6rem 0;
+  background: linear-gradient(rgba(32, 32, 32, 0.9), rgba(32, 32, 32, 0.9)),
+    url("/assets/img/test-banner.jpg") center/cover fixed;
+}
+
+/* ===== CUARTA FRANJA ===== */
+.img-holder {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.img-holder img {
+  width: 100%;
+  height: 100%;
+}
+.apps-details {
+  width: 65%;
+  margin: auto;
+}
+
+/* ===== QUINTA FRANJA ===== */
+.features {
+  width: 90%;
+}
+.features-icons {
+  font-size: 5rem;
+}
+
+/* ===== FOOTER FRANJA ===== */
+.footer-style {
+  padding: 5rem 0;
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+  width: 100%;
+}
+.footer-social a {
+  display: block;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 17px;
+  margin-right: 10px;
+}
+.footer-social ul {
+  padding: 0;
+}
+/* MEDIA QUERIES */
+@media screen and (max-width: 991px) {
+  .slider-social {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .ajuste {
+    max-width: 1100px;
+    padding-top: 7rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 4rem;
+  }
+  .subtitle {
+    font-size: 4.5rem;
+    text-align: start;
+  }
+  .banner {
+    margin-top: 7rem;
+  }
+  .hojas {
+    position: absolute;
+    left: 75%;
+    top: 30%;
+    transform: translateY(-50%);
+    z-index: 11;
+  }
+  .banner .small-p {
+    font-size: 0.75rem;
+    max-width: 40%;
+  }
+  #btn-more {
+    width: 40%;
+  }
+  .busqueda {
+    max-width: 70%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5rem;
+    background-color: rgba(83, 83, 83, 0.322);
+    border-radius: 50px;
+    padding: 0.6rem;
+    border-bottom: none;
+  }
+  .form-group {
+    padding-bottom: 0rem;
+    border-bottom: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  .icon {
+    position: absolute;
+    left: 2.5%;
+    top: 25%;
+    color: rgb(133, 131, 131);
+    font-size: 2rem;
+  }
+}
